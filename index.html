@@ -27,23 +27,23 @@
                     <h2 class="card-header"><i class="fa-solid fa-sliders"></i> Search Parameters</h2>
                     <div class="card-body">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Search Term">
-                            <label for="floatingInput">Search Terms</label>
+                            <input type="text" class="form-control" id="search-term-input" placeholder="Search Term">
+                            <label for="search-term-input">Search Terms</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="floatingInput"
+                            <input type="number" class="form-control" id="records-input"
                                 placeholder="Number of Records to Retrieve" min="0">
-                            <label for="floatingInput">Number of Records to Retrieve</label>
+                            <label for="records-input">Number of Records to Retrieve</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="floatingInput"
+                            <input type="number" class="form-control" id="start-year-input"
                                 placeholder="Start Year (Optional)" min="1851" max="2023">
-                            <label for="floatingInput">Start Year (Optional)</label>
+                            <label for="start-year-input">Start Year (Optional)</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="floatingInput"
+                            <input type="number" class="form-control" id="end-year-input"
                                 placeholder="End Year (Optional)" min="1851" max="2023">
-                            <label for="floatingInput">End Year (Optional)</label>
+                            <label for="end-year-input">End Year (Optional)</label>
                         </div>
                         <div class="d-grid gap-2 d-md-flex">
                             <button type="button" class="btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
@@ -58,7 +58,7 @@
         <section class="container-fluid">
             <div class="card">
                 <h2 class="card-header"><i class="fa-solid fa-table"></i></i> Top Articles</h2>
-                <div class="card-body">
+                <div class="card-body" id="articles">
 
                 </div>
             </div>
