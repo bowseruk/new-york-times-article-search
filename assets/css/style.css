@@ -1,7 +1,7 @@
 body {
-    --primary-color: rgb(14, 14, 87);
+    --primary-color: rgb(33, 50, 90);
     --secondary-color: white;
-    --tertiary-color: rgb(244, 244, 248);
+    --tertiary-color: rgb(248, 248, 248);
 }
 
 header {
@@ -17,7 +17,7 @@ header, header h1 {
 }
 
 main {
-    min-height: calc(100vh - 260px);
+    min-height: calc(100vh - 350px);
 }
 
 section, footer {
