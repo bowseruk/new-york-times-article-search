@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New York Times Article Search</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0dd9fad87f.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>New York Times Search</h1>
+    <header class="container-fluid text-center">
+            <h1><i class="fa-regular fa-newspaper"></i> New York Times Search</h1>
     </header>
     <main>
-        <section>
+        <!-- Search Parameters -->
+        <section class="container-fluid">
             <form>
-                <input type="text" id="search-input">
-                <input type="number" id="records-input">
-                <input type="number" id="start-year-input" min="1800" max="2023">
-                <input type="number" id="end-year-input" min="1800" max="2023">
-                <!-- Search Parameters -->
-                <button id="search-btn">Search</button>
-                <button id="clear-btn">Clear Results</button>
+                <div class="card">
+                    <h2 class="card-header"><i class="fa-solid fa-sliders"></i> Search Parameters</h2>
+                    <div class="card-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Search Term">
+                            <label for="floatingInput">Search Terms</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput"
+                                placeholder="Number of Records to Retrieve" min="0">
+                            <label for="floatingInput">Number of Records to Retrieve</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput"
+                                placeholder="Start Year (Optional)" min="1851" max="2023">
+                            <label for="floatingInput">Start Year (Optional)</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput"
+                                placeholder="End Year (Optional)" min="1851" max="2023">
+                            <label for="floatingInput">End Year (Optional)</label>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex">
+                            <button type="button" class="btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn" id="clear-btn"><i class="fa-solid fa-trash"></i> Clear Results</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
             </form>
         </section>
-        <section>
-            <!-- Top Articles Area -->
+        <section class="container-fluid">
+            <div class="card">
+                <h2 class="card-header"><i class="fa-solid fa-table"></i></i> Top Articles</h2>
+                <div class="card-body">
+
+                </div>
+            </div>
+            <!-- Search Parameters -->
+
+            </div>
         </section>
     </main>
+    <footer class="container-fluid text-center">
+        <h2>Made with lots and lots of <i class="fa-solid fa-heart"></i></h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
