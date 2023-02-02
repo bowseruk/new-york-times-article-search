@@ -1,5 +1,5 @@
 body {
-    --primary-color: rgb(18, 18, 83);
+    --primary-color: rgb(14, 14, 87);
     --secondary-color: white;
     --tertiary-color: rgb(244, 244, 248);
 }
@@ -7,13 +7,13 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 40px 0;
+    padding: 50px 0;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 header, header h1 {
-    font-size: larger;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 main {
