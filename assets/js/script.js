@@ -46,11 +46,13 @@ let query = (searchTerm, page, startYear, endYear, apiKey = nytAPIKey) => `https
 
 // Search for the query
 function getPage(queryURL, maxResponse = 10) {
+    if (maxResponse <= 0) {
+        return false;
+    }
     $.ajax({
         url: queryURL,
         method: "GET"
-    })
-        .then((response) => renderArticles(response, maxResponse))
+    }).then((response) => renderArticles(response, maxResponse));
 }
 
 $('#search-btn').on("click", (event) => {
