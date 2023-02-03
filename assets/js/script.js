@@ -33,6 +33,7 @@ function renderArticles(response, maxResponse) {
         // Append all the items with dot notation
         $('#articles').append($('<div>').addClass("card").append($('<h2>').addClass("card-header").text(article.headline.main)).append($('<div>').addClass("card-body").append($('<ul>').addClass("list-group list-group-flush").append(pubDate).append(section).append(synopsis).append(link))));
     })
+    // Test if response is full
     return (response.response.docs.length < 10) ? false : true;
 }
 
