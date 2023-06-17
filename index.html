@@ -29,21 +29,33 @@
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="search-term-input" placeholder="Search Term">
                             <label for="search-term-input">Search Terms</label>
+                            <div id="search-feedback" class="invalid-feedback">
+                                Please provide a valid non-empty string.
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control" id="records-input"
                                 placeholder="Number of Records to Retrieve" min="1" value="10" max="99">
                             <label for="records-input">Number of Records to Retrieve</label>
+                            <div id="records-feedback" class="invalid-feedback">
+                                Please provide a number of records between 1 - 99.
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control" id="start-year-input"
                                 placeholder="Start Year (Optional)" min="1851" max="2023">
                             <label for="start-year-input">Start Year (Optional)</label>
+                            <div id="start-year-feedback" class="invalid-feedback">
+                                Please provide a the year between 1851 and 2023 in numeric format. This should be equal or lower than the end year.
+                            </div>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="number" class="form-control" id="end-year-input"
                                 placeholder="End Year (Optional)" min="1851" max="2023">
                             <label for="end-year-input">End Year (Optional)</label>
+                            <div id="records-feedback" class="invalid-feedback">
+                                Please provide a the year between 1851 and 2023 in numeric format.This should be equal or geater than the end year.
+                            </div>
                         </div>
                         <div class="d-grid gap-2 d-md-flex">
                             <button type="button" class="btn" id="search-btn"><i
